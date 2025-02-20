@@ -8,20 +8,47 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: beige;
+            background-image: url("https://img.freepik.com/vetores-gratis/fundo-branco-monocromatico-de-estilo-de-papel_52683-66443.jpg?semt=ais_hybrid");
             margin: 0;
             padding-bottom: 100px;
+            background-size: cover;
         }
+
         header {
-            background-color: darkslateblue;
+            background-color: darkmagenta;
             color: white;
             padding: 15px;
             text-align: center;
         }
+        .container {
+            margin-top: 100px;            
+        }
+        .container2{
+            margin-top: 130px;            
+        }
+
+        .conteudo {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+
+        .imagemFeia {
+            border-radius: 30px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+        .texto {
+            width: 50%; 
+            text-align: left;
+        }
+
         main {
             padding: 20px;
             text-align: center;
         }
+
         .perfil-container {
             display: flex;
             flex-wrap: wrap;
@@ -65,6 +92,10 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            height: 40px;
+        }
+        .imagemFeia{
+            width: 400px;
         }
     </style>
 </head>
@@ -75,24 +106,27 @@
 </header>
 
 <main>
-    <section>
-        <h1>O MELHOR GRUPO 🩵</h1>
-        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_2.jpg" alt="">
-        <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
+    <section class="container">
+        <h1>O MELHOR GRUPO </h1>
+        <div class="conteudo">
+            <img src="https://blog.estacio.br/wp-content/uploads/2022/09/o-que-faz-um-devops.jpeg" alt="Imagem do projeto" class="imagemFeia">
+            <div class="texto">
+                <h2>Sobre o Projeto</h2>
+                <p>Este projeto tem como objetivo entender o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
+            </div>
+        </div>
     </section>
-
-    <section>
+    <section class="container2">
         <h2>Perfis dos Alunos</h2>
         <div class="perfil-container">
             <div class="perfil">
                 <img class="foto" src="https://avatars.githubusercontent.com/u/157625816?v=4" alt="Foto do Aluno">
                 <h3>Miguel</h3>
-                <p>Curso: Tech</p>
+                <p>Curso: Análise de Dados</p>
                 <p><a href="https://github.com/MiguelAraujoDeSouza" target="_blank">GitHub</a></p>
             </div>
 
-            <div class="perfil">
+            <div class="perfil">    
                 <img class="foto" src="https://media-gru1-1.cdn.whatsapp.net/v/t61.24694-24/473400583_570136939220948_4871412455034400056_n.jpg?ccb=11-4&oh=01_Q5AaINEJ5N8qxVDC6EU3S1UBo7Fw_LZrx--smuIRRVa2QCEp&oe=67C187CC&_nc_sid=5e03e0&_nc_cat=104" alt="Foto do Aluno">
                 <h3>Mayumi</h3>
                 <p>Curso: Análise de Dados</p>
@@ -101,7 +135,7 @@
 
             <div class="perfil">
                 <img class="foto" src="FotoLeticiaTrabalho.jpg" alt="Foto do Aluno">
-                <h3>Leticia</h3>
+                <h3>Letícia</h3>
                 <p>Curso: Análise de Dados</p>
                 <p><a href="https://github.com/LeleNascimennto" target="_blank">GitHub</a></p>
             </div>
@@ -114,16 +148,16 @@
             </div>
 
             <div class="perfil">
-                <img class="foto" src="https://personstorageprod.blob.core.windows.net/personcontainer/2024_1H_TECH_Matheus_Bastos_Castilho.JPG-50p.jpg?sv=2021-10-04&st=2025-02-18T12%3A51%3A33Z&se=2025-02-18T13%3A01%3A33Z&sr=b&sp=r&sig=VOZbdPjbj0svC62QH8nT%2Fw55bUOWxnMHXDiphRISYnQ%3D&rscd=filename*%3DUTF-8%27%272024_1H_TECH_Matheus_Bastos_Castilho.JPG-50p.jpg" alt="Foto do Aluno">
+                <img class="foto" src="https://media-gru1-1.cdn.whatsapp.net/v/t61.24694-24/457574364_1081419603370814_481973624761746286_n.jpg?ccb=11-4&oh=01_Q5AaIJ2WN7CwwhV8W-u7GqM50-SAleX9DVuU4kVtyUriyQfR&oe=67C30F9F&_nc_sid=5e03e0&_nc_cat=105" alt="Foto do Aluno">
                 <h3>Matheus Bastos Castilho</h3>
-                <p>Curso: Tech</p>
+                <p>Curso: Análise de Dados</p>
                 <p><a href="https://github.com/MatheusBastosCastilho" target="_blank">GitHub</a></p>
             </div>
 
             <div class="perfil">
-                <img class="foto" src="https://personstorageprod.blob.core.windows.net/personcontainer/2024_1D_TECH_Luke_Francischini_Pereira_dos_Santos.JPG-50p.jpg?sv=2021-10-04&st=2025-02-18T12%3A48%3A42Z&se=2025-02-18T12%3A58%3A42Z&sr=b&sp=r&sig=lLg5jXgLMol%2By%2Bv1FywqGR5Yu%2BOXRh6qh8ZkMTvs6fI%3D&rscd=filename*%3DUTF-8%27%272024_1D_TECH_Luke_Francischini_Pereira_dos_Santos.JPG-50p.jpg" alt="Foto do Aluno">
+                <img class="foto" src="https://media-gru1-1.cdn.whatsapp.net/v/t61.24694-24/473398484_999484838662714_426902071345567925_n.jpg?ccb=11-4&oh=01_Q5AaILl-I374llEkeGM0nO45zqo95545yfsC6f0yFoivfO9f&oe=67C308EC&_nc_sid=5e03e0&_nc_cat=110" alt="Foto do Aluno">
                 <h3>Luke Pereira</h3>
-                <p>Curso: Tech</p>
+                <p>Curso: Análise de Dados</p>
                 <p><a href="https://github.com/Luke-Kear" target="_blank">GitHub</a></p>
             </div>
         </div>
